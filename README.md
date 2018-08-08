@@ -46,5 +46,5 @@ bundle exec rspec
 ```bash
 gem build logstash-input-burrow.gemspec
 
-logstash-plugin install ~/Developer/logstash-plugins/logstash-input-burrow/logstash-input-burrow-1.0.0.gem 
+logstash-plugin install logstash-input-burrow-1.0.0.gem 
 ```
