@@ -1,6 +1,6 @@
 # Logstash Burrow input plugin
 
-[![Travis Build Status](https://travis-ci.org/markush81/logstash-input-burrow.svg)](https://travis-ci.org/markush81/logstash-input-burrow)
+[![Travis Build Status](https://travis-ci.com/markush81/logstash-input-burrow.svg)](https://travis-ci.com/markush81/logstash-input-burrow)
 
 This plugin is based off [logstash-input-http_poller](https://github.com/logstash-plugins/logstash-input-http_poller) by @logstash-plugins.
 
