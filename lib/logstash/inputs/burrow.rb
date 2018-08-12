@@ -30,8 +30,6 @@ class LogStash::Inputs::Burrow < LogStash::Inputs::Base
 
   default :codec, "json"
 
-  public
-
   Schedule_types = %w(cron every at in)
 
   def register
@@ -60,8 +58,6 @@ class LogStash::Inputs::Burrow < LogStash::Inputs::Base
   def setup_request!
     @request = normalize_request(client_config)
   end
-
-  private
 
   def normalize_request(client_spec)
     if client_spec.is_a?(String)
@@ -114,10 +110,10 @@ class LogStash::Inputs::Burrow < LogStash::Inputs::Base
 
     raise LogStash::ConfigurationError, "No URL provided for request! #{url}" unless url
     if spec && spec[:auth]
-      if !spec[:auth][:user]
+      unless spec[:auth][:user]
         raise LogStash::ConfigurationError, "Auth was specified, but 'user' was not!"
       end
-      if !spec[:auth][:pass]
+      unless spec[:auth][:pass]
         raise LogStash::ConfigurationError, "Auth was specified, but 'password' was not!"
       end
     end
@@ -226,7 +222,7 @@ class LogStash::Inputs::Burrow < LogStash::Inputs::Base
 
   private
 
-  def handle_decoded_event(queue, request, response, event, execution_time)
+  def handle_decoded_event(queue, request, response, event, _execution_time)
     decorate(event)
     queue << event
   rescue StandardError, java.lang.Exception => e
