@@ -41,6 +41,12 @@ bundle install
 bundle exec rspec
 ```
 
+### Install Plugin from rubygems.org
+
+```bash
+logstash-plugin install logstash-input-burrow
+```
+
 ## Install Plugin
 
 ```bash
