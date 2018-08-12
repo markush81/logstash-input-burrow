@@ -101,8 +101,6 @@ class LogStash::Inputs::Burrow < LogStash::Inputs::Base
     res
   end
 
-  private
-
   def validate_request!(request)
     url, spec = request
 
