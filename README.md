@@ -1,6 +1,6 @@
 # Logstash Burrow input plugin
 
-[![Travis Build Status](https://travis-ci.com/markush81/logstash-input-burrow.svg)](https://travis-ci.com/markush81/logstash-input-burrow) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/dded0f913d8048bfb9717f25cd31538d)](https://www.codacy.com/app/markush81/logstash-input-burrow?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=markush81/logstash-input-burrow&amp;utm_campaign=Badge_Grade)
+[![Travis Build Status](https://travis-ci.com/markush81/logstash-input-burrow.svg)](https://travis-ci.com/markush81/logstash-input-burrow)
 
 This plugin is based off [logstash-input-http_poller](https://github.com/logstash-plugins/logstash-input-http_poller) by @logstash-plugins.
 
